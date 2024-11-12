@@ -48,6 +48,10 @@ export class IndexerService {
         }
     }
 
+    async getAddressHistory(address: string, ticker: string) {
+        
+    }
+
     async getAddressSummary(address: string): Promise<{ [ticker: string]: { availableBalance: string; transferableBalance: string } }> {
         const tickers = ['test_BTC4', 'test_FUSD'];
         const balances = {};
